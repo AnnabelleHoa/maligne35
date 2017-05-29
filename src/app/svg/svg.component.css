@@ -1,0 +1,35 @@
+.svg-container{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 45%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.svg-content{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#svg-ligne35 g circle:hover,
+#svg-ligne35 g circle:hover ~ text,
+#svg-ligne35 g text:hover,
+#svg-ligne35 g text:hover ~ circle{
+  fill: red;
+  cursor: pointer;
+  transition:  0.2s ease all;
+
+}
+
+#svg-ligne35 g circle:active,
+#svg-ligne35 g circle:active ~ text,
+#svg-ligne35 g text:active,
+#svg-ligne35 g text:active ~ circle{
+  fill: #533E76;
+  cursor: pointer;
+  font-weight: bold;
+  transition:  0.1s ease all;
+}

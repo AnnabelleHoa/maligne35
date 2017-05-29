@@ -1,0 +1,12 @@
+<div id="selection">
+  <select id="selectMA">
+    <option *ngFor="let itemMA of directionMaItems" value="{{itemMA.value}}">{{itemMA.name}}</option>
+  </select>
+  <ol id="instructions">
+    <li>Choisissez votre station de départ</li>
+    <li>Choisissez votre station d'arrivée</li>
+  </ol>
+  <select id="selectGE">
+    <option *ngFor="let itemGE of directionGeItems" value="{{itemGE.value}}">{{itemGE.name}}</option>
+  </select>
+</div>

@@ -1,0 +1,12 @@
+#selection{
+  display: flex;
+  justify-content: space-around;
+}
+
+#selection>*{
+  align-items: center;
+}
+
+ol{
+  width:21%;
+}

@@ -1,6 +1,42 @@
-<img src="../../assets/img/logo.png" alt="logo Ma Ligne 35" title="Ma Ligne 35">
-<ul>
-  <li *ngFor="let item of HeaderMenuItems">
-    <a href={{item.url}}>{{item.name}}</a>
-  </li>
-</ul>
+<div class="menu-container">
+  <img src="../../assets/img/logo-blanc.png" alt="logo Ma Ligne 35" title="Ma Ligne 35">
+  <ul>
+    <li *ngFor="let item of HeaderMenuItems">
+      <a routerLink="/{{item.url}}" routerLinkActive="active">{{item.name}}</a>
+    </li>
+  </ul>
+
+  <div class="svg-menu-container">
+    <svg version="1.1" viewBox="0 0 449.167 23.167" preserveAspectRatio="xMinYMin meet" >
+      <g id="Calque_1">
+        <rect x="11.5" y="7.5" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="429" height="8"/>
+      </g>
+      <g id="accueil">
+        <g>
+          <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="11.812" cy="11.771" r="10.229"/>
+          <circle cx="11.844" cy="11.802" r="4.01"/>
+        </g>
+      </g>
+      <g id="arret">
+        <g>
+          <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="153.812" cy="11.771" r="10.229"/>
+          <circle cx="153.844" cy="11.802" r="4.01"/>
+        </g>
+      </g>
+      <g id="trajet">
+        <g>
+          <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="295.812" cy="11.771" r="10.229"/>
+          <circle cx="295.844" cy="11.802" r="4.01"/>
+        </g>
+      </g>
+      <g id="grille">
+        <g>
+          <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="437.812" cy="11.771" r="10.229"/>
+          <circle cx="437.844" cy="11.802" r="4.01"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
