@@ -1,3 +1,11 @@
+@keyframes busAnim{
+  from { background-image: url('../../assets/img/bus/droite/bus-01.png'); }
+  25% { background-image: url('../../assets/img/bus/droite/bus-02.png'); }
+  50% { background-image: url('../../assets/img/bus/droite/bus-03.png'); }
+  75% { background-image: url('../../assets/img/bus/droite/bus-04.png'); }
+  to   { background-image: url('../../assets/img/bus/droite/bus-05.png'); }
+}
+
 #selection{
   display: flex;
   justify-content: space-around;
@@ -5,6 +13,21 @@
 
 #selection>*{
   align-items: center;
+}
+
+#svg-container{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#moving-bus{
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: busAnim 1s linear infinite 0.2s;
 }
 
 ol{

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +6,4 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  constructor(private _router: Router) {
-  this._router.events.subscribe((url:any) => console.log(url.url));
-  }
 }

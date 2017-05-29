@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MenuModule } from './menu/menu.module';
 import { GrilleModule } from './grille/grille.module';
-import { ArretModule } from './arret/arret.module';
 import { TrajetModule } from './trajet/trajet.module';
 import { AccueilModule } from './accueil/accueil.module';
 import {routing} from './app.routing';
@@ -23,7 +22,6 @@ import {routing} from './app.routing';
     HttpModule,
     MenuModule,
     GrilleModule,
-    ArretModule,
     TrajetModule,
     AccueilModule,
     routing

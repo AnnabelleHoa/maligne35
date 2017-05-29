@@ -3,10 +3,15 @@
   margin: 0;
 }
 
+.clearfix{
+  clear: both;
+}
+
 .menu-container{
-  width: 900px;
-  margin: 0 auto;
+  margin-left: 15%;
+  margin-right: 15%;
   padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 img{
@@ -15,16 +20,15 @@ img{
 }
 
 ul{
-  float: left;
+  float: right;
   list-style-type: none;
   height: 3.25rem;
-  width: 50%;
-  padding-left: 11em;
+  width: 60%;
 }
 
 ul li{
   float: left;
-  width: 25%;
+  width: 33%;
   height: 3.25rem;
   line-height: 3.25em;
   display: inline;
@@ -49,10 +53,10 @@ ul:after {
 }
 
 .svg-menu-container{
-  padding-left: 14em;
-  float: left;
+  padding-right: 9%;
+  float: right;
   position: relative;
-  width: 40%;
+  width: 42.5%;
   vertical-align: middle;
   overflow: hidden;
 }
