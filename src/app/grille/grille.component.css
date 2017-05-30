@@ -1,0 +1,26 @@
+.container{
+  width:900px;
+  margin: 0 auto;
+}
+
+h1{
+  float: left;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  color: white;
+}
+
+button{
+  float: right;
+  padding:1em;
+  margin-top:2em;
+}
+
+img{display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.clearfix{
+  clear: both;
+}

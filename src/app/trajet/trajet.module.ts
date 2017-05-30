@@ -7,13 +7,16 @@ import { SvgModule } from '../svg/svg.module';
 
 import { TrajetComponent } from './trajet.component';
 
+import { TrajetService } from './trajet.service';
+
 @NgModule({
   imports: [
     CommonModule,
     SvgModule
   ],
   declarations: [TrajetComponent],
-  exports: [TrajetComponent]
+  exports: [TrajetComponent],
+  providers: [TrajetService]
 })
 
 export class TrajetModule {
