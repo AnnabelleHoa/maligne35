@@ -78,6 +78,7 @@ ul li{
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding-left: 2.5%;
 
   animation: busAnim 1s linear infinite 0.2s;
 }
