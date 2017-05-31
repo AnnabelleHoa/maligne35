@@ -25,18 +25,22 @@ ul{
 }
 
 ul li{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   float: left;
   width: 25%;
   text-align: center;
 }
 
 .styled-select select {
+  display: block;
   background: transparent;
   border: none;
-  font-size: 14px;
-  height: 29px;
-  padding: 5px; /* If you add too much padding here, the options won't show in IE */
-  width: 268px;
+  font-size: 1em;
+  height: 40px;
+  width: 100%;
+  /* line-height: 40px; */
+  padding: 5px;
   font-family: Quicksand-Regular;
   cursor: pointer;
 }
@@ -69,7 +73,14 @@ ul li{
 #svg-container{
   display: block;
   width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.bus-container{
+  margin-top: 0.5em;
+  background: url('../../assets/img/background-city.png');
+  background-size: contain;
 }
 
 #moving-bus{
@@ -91,7 +102,7 @@ h2{
 }
 
 .resultats-container{
-  width:40%;
+  width:600px;
   margin: 0 auto;
 }
 

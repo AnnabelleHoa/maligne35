@@ -9,28 +9,15 @@ import {Component, Output, EventEmitter} from '@angular/core';
 
 export class SvgComponent{
 
-  @Output() InfoStationSelect = new EventEmitter();
+  @Output() stationSelection = new EventEmitter();
 
   station: string;
-  groupeId: string;
 
-  infoStation= [{id: '', name: ''}];
+  getMonArret(idStation){
 
-  getMonArret(idStation: any){
-
-    //console.log(idStation);
-    this.station = idStation.target.id;
+    this.station= idStation.target.id;
     //console.log(this.station);
-
-    this.groupeId = idStation.path['1'].id;
-    //console.log(this.groupeId);
-
-    this.infoStation = [{id: this.groupeId, name: this.station}]
-    //console.log(this.infoStation);
-
-    this.InfoStationSelect.emit(this.infoStation);
-
-
+    this.stationSelection.emit(this.station);
   }
 
 }

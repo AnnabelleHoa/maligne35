@@ -11,15 +11,15 @@
     </li>
     <li>
       <span class="numbers">2</span>
-      <p>Sélectionnez <br> station de départ</p>
+      <p>Sélectionnez<br>votre station de départ</p>
     </li>
     <li>
       <span class="numbers">3</span>
-      <p>Sélectionnez <br> votre station d'arrivée</p>
+      <p>Sélectionnez<br>votre station d'arrivée</p>
     </li>
     <li class="validate" (click)="rechercheHoraires()">
       <span class="numbers">4</span>
-      <p>Cliquez ici <br> pour valider le trajet</p>
+      <p>Cliquez ici<br>pour valider le trajet</p>
     </li>
     <div class="clearfix"></div>
   </ul>
@@ -27,7 +27,7 @@
 <div class="clearfix"></div>
 <div class="trajet-container">
   <div id="svg-container">
-    <app-svg (InfoStationSelect)="MaStation($event)"></app-svg>
+    <app-svg (stationSelection)="MaStation($event)"></app-svg>
   </div>
   <div class="clearfix"></div>
 
@@ -40,7 +40,10 @@
     </select>
   </div>
 </div>
-<div alt="bus" id="moving-bus"></div>
+<div class="bus-container">
+  <div alt="bus" id="moving-bus"></div>
+</div>
+
 
 
 
