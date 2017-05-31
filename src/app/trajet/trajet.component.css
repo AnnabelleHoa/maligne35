@@ -6,23 +6,75 @@
   to   { background-image: url('../../assets/img/bus/droite/bus-05.png'); }
 }
 
-#selection{
-  display: flex;
-  justify-content: space-around;
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url('../../assets/fonts/Quicksand/Quicksand-Regular.ttf');
 }
 
-#selection>*{
-  align-items: center;
+.trajet-container{
+  background-color: rgba(255,255,255,0.3);
+}
+.selection-mobile
+{
+  display: none;
+}
+
+ul{
+  background-color: rgba(255,255,255,0.5);
+  list-style-type: none;
+}
+
+ul li{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.styled-select select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px; /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+  font-family: Quicksand-Regular;
+  cursor: pointer;
+}
+
+.first-number{
+  padding-left: 0.45em;
+  padding-right: 0.45em;
+  border-radius: 50%;
+  border: solid black 1px;
+}
+
+.numbers{
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  border-radius: 50%;
+  border: solid black 1px;
+}
+
+.validate{
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.7);;
+}
+
+.validate:hover{
+  cursor: pointer;
+  background-color: rgb(122, 194, 149);
+
 }
 
 #svg-container{
-  margin-left: 10%;
-  margin-right: 10%;
+  display: block;
+  width: 80%;
+  margin:0 auto;
 }
 
 #moving-bus{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 67px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,6 +82,35 @@
   animation: busAnim 1s linear infinite 0.2s;
 }
 
-ol{
-  width:21%;
+h2{
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  padding-top: 2em;
+}
+
+.resultats-container{
+  width:40%;
+  margin: 0 auto;
+}
+
+.resultats,
+.text-resultats{
+  float: left;
+  width:43%;
+  background-color: rgba(255,255,255,0.3);
+  margin:0 auto;
+  padding:1em;
+  margin-top:2em;
+
+}
+
+.text-resultats{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.resultats{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }

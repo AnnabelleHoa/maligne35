@@ -1,33 +1,60 @@
 <div id="selection">
-
-  <ol id="instructions">
-    <li>Dans quelle direction allez-vous ?</li>
-    <li>Choisissez votre station de départ</li>
-    <li>Choisissez votre station d'arrivée</li>
-  </ol>
-
   <!-- ...... (select) A ou R pour déterminer la direction via l'API ...... -->
-  <select #d (change)="MaDirection(d.value)" id="selectDir">
-    <option  value="A">Gare de l'Est</option>
-    <option value="R">Mairie d’Aubervilliers</option>
-  </select>
-
-  <select id="selectMA">
-    <option *ngFor="let itemMA of directionMaItems" value="{{itemMA.value}}">{{itemMA.name}}</option>
-  </select>
-  <select id="selectGE">
-    <option *ngFor="let itemGE of directionGeItems" value="{{itemGE.value}}">{{itemGE.name}}</option>
-  </select>
+  <ul>
+    <li class="styled-select blue semi-square">
+      <span class="first-number">1</span>
+      <select #d (change)="MaDirection(d.value)" id="selectDir">
+        <option selected disabled>Sélectionnez votre Direction</option>
+        <option value="A">Gare de l'Est</option>
+        <option value="R">Mairie d’Aubervilliers</option>
+      </select>
+    </li>
+    <li>
+      <span class="numbers">2</span>
+      <p>Sélectionnez <br> station de départ</p>
+    </li>
+    <li>
+      <span class="numbers">3</span>
+      <p>Sélectionnez <br> votre station d'arrivée</p>
+    </li>
+    <li class="validate" (click)="rechercheHoraires()">
+      <span class="numbers">4</span>
+      <p>Cliquez ici <br> pour valider le trajet</p>
+    </li>
+    <div class="clearfix"></div>
+  </ul>
 </div>
-<div id="svg-container">
-  <app-svg (stationSelection)="MaStation($event)"></app-svg>
-  <button (click)="rechercheHoraires()">Valider le Trajet</button>
-</div>
+<div class="clearfix"></div>
+<div class="trajet-container">
+  <div id="svg-container">
+    <app-svg (stationSelection)="MaStation($event)"></app-svg>
+  </div>
+  <div class="clearfix"></div>
 
+  <div class="selection-mobile">
+    <select id="selectMA">
+      <option *ngFor="let itemMA of directionMaItems" value="{{itemMA.value}}">{{itemMA.name}}</option>
+    </select>
+    <select id="selectGE">
+      <option *ngFor="let itemGE of directionGeItems" value="{{itemGE.value}}">{{itemGE.name}}</option>
+    </select>
+  </div>
+</div>
 <div alt="bus" id="moving-bus"></div>
-<div id="resultats">
-  Horaires de vos trois prochains bus :
-  {{prochainPassage}}
-  {{deuxiemePassage}}
+
+
+
+<div class="resultats-container">
+  <h2>Horaires de vos deux prochains bus :</h2>
+  <div class="text-resultats">
+    <p>Horaire du prochain bus :</p>
+    <p>Horaire du bus suivant :</p>
+  </div>
+  <div class="resultats">
+    <p>{{prochainPassage}}.</p>
+    <p>{{deuxiemePassage}}.</p>
+  </div>
 </div>
+<div class="clearfix"></div>
+
 <app-map></app-map>

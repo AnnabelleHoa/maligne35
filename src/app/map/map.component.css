@@ -1,3 +1,10 @@
 .sebm-google-map-container {
   height: 400px;
 }
+
+h2{
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  padding-top: 2em;
+}

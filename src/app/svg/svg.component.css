@@ -2,7 +2,7 @@
   display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 45%;
+  padding-bottom: 39%;
   vertical-align: middle;
   overflow: hidden;
 }
@@ -12,6 +12,15 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#svg-ligne35 g path{
+  fill : rgb(122, 194, 149);
+}
+
+
+#svg-ligne35 g text{
+  fill : white;
 }
 
 #svg-ligne35 g circle:hover,
