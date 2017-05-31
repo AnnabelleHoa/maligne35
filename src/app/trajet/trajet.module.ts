@@ -1,22 +1,21 @@
-/**
- * Created by Mookie on 28/05/2017.
- */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SvgModule } from '../svg/svg.module';
+import { MapModule } from '../map/map.module';
 
 import { TrajetComponent } from './trajet.component';
 
-import { TrajetService } from './trajet.service';
+import { TrajetServices } from './trajet.service';
 
 @NgModule({
   imports: [
     CommonModule,
-    SvgModule
+    SvgModule,
+    MapModule
   ],
   declarations: [TrajetComponent],
   exports: [TrajetComponent],
-  providers: [TrajetService]
+  providers: [TrajetServices]
 })
 
 export class TrajetModule {

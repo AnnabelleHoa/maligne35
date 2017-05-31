@@ -1,20 +1,33 @@
 <div id="selection">
-  <select id="selectMA">
-    <option *ngFor="let itemMA of directionMaItems" value="{{itemMA.value}}">{{itemMA.name}}</option>
-  </select>
+
   <ol id="instructions">
+    <li>Dans quelle direction allez-vous ?</li>
     <li>Choisissez votre station de départ</li>
     <li>Choisissez votre station d'arrivée</li>
   </ol>
+
+  <!-- ...... (select) A ou R pour déterminer la direction via l'API ...... -->
+  <select #d (change)="MaDirection(d.value)" id="selectDir">
+    <option  value="A">Gare de l'Est</option>
+    <option value="R">Mairie d’Aubervilliers</option>
+  </select>
+
+  <select id="selectMA">
+    <option *ngFor="let itemMA of directionMaItems" value="{{itemMA.value}}">{{itemMA.name}}</option>
+  </select>
   <select id="selectGE">
     <option *ngFor="let itemGE of directionGeItems" value="{{itemGE.value}}">{{itemGE.name}}</option>
   </select>
 </div>
 <div id="svg-container">
-  <app-svg></app-svg>
+  <app-svg (stationSelection)="MaStation($event)"></app-svg>
+  <button (click)="rechercheHoraires()">Valider le Trajet</button>
 </div>
 
 <div alt="bus" id="moving-bus"></div>
 <div id="resultats">
   Horaires de vos trois prochains bus :
+  {{prochainPassage}}
+  {{deuxiemePassage}}
 </div>
+<app-map></app-map>

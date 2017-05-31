@@ -1,8 +1,136 @@
 [
-  {
-
-  },
-  {
-
-  }
+  [
+    {
+      "Nom de l'arret": "Gare de l'Est",
+      "stop_id": 3666620,
+      "stop_lat": "48,87615667",
+      "stop_lng": "2,357569912"
+    },
+    {
+      "Nom de l'arret": "Valenciennes",
+      "stop_id": 3666563,
+      "stop_lat": "48,8778195",
+      "stop_lng": "2,356494136"
+    },
+    {
+      "Nom de l'arret": "La Fayette-Dunkerque",
+      "stop_id": 3747907,
+      "stop_lat": "48,87947328",
+      "stop_lng": "2,355718061"
+    },
+    {
+      "Nom de l'arret": "Gare du Nord",
+      "stop_id": 3811223,
+      "stop_lat": "48,8808301",
+      "stop_lng": "2,357312841"
+    },
+    {
+      "Nom de l'arret": "Cail-Demarquay",
+      "stop_id": 3741054,
+      "stop_lat": "48,8818005",
+      "stop_lng": "2,358566875"
+    },
+    {
+      "Nom de l'arret": "Place de la Chapelle",
+      "stop_id": 3666729,
+      "stop_lat": "48,88362477",
+      "stop_lng": "2,359344376"
+    },
+    {
+      "Nom de l'arret": "Département-Marx Dormoy",
+      "stop_id": 5761435,
+      "stop_lat": "48,88691402",
+      "stop_lng": "2,35975462"
+    },
+    {
+      "Nom de l'arret": "Ordener-Marx Dormoy",
+      "stop_id": 5770806,
+      "stop_lat": "48,89035621",
+      "stop_lng": "2,359251842"
+    },
+    {
+      "Nom de l'arret": "Place de Torcy",
+      "stop_id": 5761431,
+      "stop_lat": "48,8913444",
+      "stop_lng": "2,361323905"
+    },
+    {
+      "Nom de l'arret": "Place Hébert",
+      "stop_id": 5761428,
+      "stop_lat": "48,89298868",
+      "stop_lng": "2,363082895"
+    },
+    {
+      "Nom de l'arret": "Tristan Tzara",
+      "stop_id": 5761427,
+      "stop_lat": "48,89430909",
+      "stop_lng": "2,366136676"
+    },
+    {
+      "Nom de l'arret": "Évangile-Aubervilliers",
+      "stop_id": 5761424,
+      "stop_lat": "48,89553921",
+      "stop_lng": "2,370444547"
+    },
+    {
+      "Nom de l'arret": "Porte d'Aubervilliers-Macdonald",
+      "stop_id": 5761315,
+      "stop_lat": "48,89800176",
+      "stop_lng": "2,370173505"
+    },
+    {
+      "Nom de l'arret": "Porte díAubervilliers-Cité Ch.Hermite",
+      "stop_id": 5761422,
+      "stop_lat": "48,89919707",
+      "stop_lng": "2,370106108"
+    },
+    {
+      "Nom de l'arret": "Skanderbeg",
+      "stop_id": 6131967,
+      "stop_lat": "48,90006883",
+      "stop_lng": "2,370079397"
+    },
+    {
+      "Nom de l'arret": "Parc du millénaire",
+      "stop_id": 5761449,
+      "stop_lat": "48,90163252",
+      "stop_lng": "2,370325763"
+    },
+    {
+      "Nom de l'arret": "La Haie Coq",
+      "stop_id": 5761277,
+      "stop_lat": "48,90480393",
+      "stop_lng": "2,373845042"
+    },
+    {
+      "Nom de l'arret": "Gardinoux",
+      "stop_id": 5761312,
+      "stop_lat": "48,90596544",
+      "stop_lng": "2,365884145"
+    },
+    {
+      "Nom de l'arret": "Félix Faure-Victor Hugo",
+      "stop_id": 5355352,
+      "stop_lat": "48,90833464",
+      "stop_lng": "2,377596804"
+    },
+    {
+      "Nom de l'arret": "Villebois-Mareuil",
+      "stop_id": 5761414,
+      "stop_lat": "48,91088636",
+      "stop_lng": "2,379330357"
+    },
+    {
+      "Nom de l'arret": "André Karman",
+      "stop_id": 5761412,
+      "stop_lat": "48,91107309",
+      "stop_lng": "2,384661568"
+    },
+    {
+      "Nom de l'arret": "Mairie d'Aubervilliers",
+      "stop_id": 4009081,
+      "stop_lat": "48,91436357",
+      "stop_lng": "2,381460286"
+    }
+  ]
 ]

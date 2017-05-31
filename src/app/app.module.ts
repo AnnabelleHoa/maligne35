@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
 import { MenuModule } from './menu/menu.module';
 import { GrilleModule } from './grille/grille.module';
 import { TrajetModule } from './trajet/trajet.module';
 import { AccueilModule } from './accueil/accueil.module';
+import { MapModule } from './map/map.module';
 import {routing} from './app.routing';
 
+import { AppComponent } from './app.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {routing} from './app.routing';
     GrilleModule,
     TrajetModule,
     AccueilModule,
+    MapModule,
     routing
   ],
   providers: [],

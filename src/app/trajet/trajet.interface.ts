@@ -1,7 +1,5 @@
-/**
- * Created by Mookie on 28/05/2017.
- */
-export interface DirectionInterface {
+export interface TrajetsCollection {
+  id: number;
   name: string;
   value: string;
 }
