@@ -40,7 +40,7 @@ else if (this.url.url === '/grille') {
 
   ngOnInit(){
     this._stations.getStationsFromAPI().subscribe(
-                              res => console.log(this.stations = res),
+                              res => this.stations = res,
                               err => console.error(err.status)
     );
 
