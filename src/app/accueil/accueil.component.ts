@@ -12,4 +12,14 @@ import { Component } from '@angular/core';
 })
 
 export class AccueilComponent {
+  innerHeight:any;
+  innerWidth:any;
+
+  constructor() {
+    this.innerHeight = (window.screen.height) + 'px';
+    console.log(this.innerHeight);
+    this.innerWidth = (window.screen.width) + 'px';
+    console.log(this.innerWidth);
+
+  }
 }

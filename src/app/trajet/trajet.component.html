@@ -15,11 +15,11 @@
     </li>
     <li>
       <span class="numbers">3</span>
-      <p>Sélectionnez<br>votre station d'arrivée</p>
+      <p>Sélectionnez <br> votre station d'arrivée</p>
     </li>
     <li class="validate" (click)="rechercheHoraires()">
       <span class="numbers">4</span>
-      <p>Cliquez ici<br>pour valider le trajet</p>
+      <p>Cliquez ici <br> pour valider le trajet</p>
     </li>
     <div class="clearfix"></div>
   </ul>
@@ -27,24 +27,48 @@
 <div class="clearfix"></div>
 <div class="trajet-container">
   <div id="svg-container">
-    <app-svg (stationSelection)="MaStation($event)"></app-svg>
+    <app-svg (InfoStationSelect)="MaStation($event)"></app-svg>
   </div>
   <div class="clearfix"></div>
 
   <div class="selection-mobile">
-    <select id="selectMA">
-      <option *ngFor="let itemMA of directionMaItems" value="{{itemMA.value}}">{{itemMA.name}}</option>
-    </select>
-    <select id="selectGE">
-      <option *ngFor="let itemGE of directionGeItems" value="{{itemGE.value}}">{{itemGE.name}}</option>
-    </select>
+    <div id="selectMA_Depart">
+      <label>Sélectionnez votre Station de Départ</label>
+      <select #md (change)="MaStationMobile(md.value)" >
+        <option selected disabled>DEPART</option>
+        <option *ngFor="let itemMA of directionMaItems"  value="{{itemMA.value}}">{{itemMA.name}}</option>
+      </select>
+    </div>
+
+    <div id="selectMA_Arrivee">
+      <label>Sélectionnez votre Station d'Arrivée</label>
+      <select #ma (change)="MaStationMobile(ma.value)" >
+        <option selected disabled>ARRIVEE</option>
+        <option *ngFor="let itemMA of directionMaItems"  value="{{itemMA.value}}">{{itemMA.name}}</option>
+      </select>
+    </div>
+
+    <div id="selectGE_Depart">
+      <label>Sélectionnez votre Station de Départ</label>
+      <select #gd (change)="MaStationMobile(gd.value)" >
+        <option selected disabled>DEPART</option>
+        <option *ngFor="let itemGE of directionGeItems"  value="{{itemGE.value}}">{{itemGE.name}}</option>
+      </select>
+    </div>
+
+    <div id="selectGE_Arrivee">
+      <label>Sélectionnez votre Station d'Arrivée</label>
+      <select #ga (change)="MaStationMobile(ga.value)" >
+        <option selected disabled>ARRIVEE</option>
+        <option *ngFor="let itemGE of directionGeItems"  value="{{itemGE.value}}">{{itemGE.name}}</option>
+      </select>
+    </div>
+
   </div>
 </div>
 <div class="bus-container">
   <div alt="bus" id="moving-bus"></div>
 </div>
-
-
 
 
 <div class="resultats-container">
